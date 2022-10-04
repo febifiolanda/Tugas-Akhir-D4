@@ -76,7 +76,7 @@
 		},
 		methods: {
 			countTweet(){
-				let url = "http://127.0.0.1:5000/tweet/count?hashtag="+this.hashtag;
+				let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/count?hashtag="+this.hashtag;
 				axios
 					.get(url)
 					.then(
@@ -89,7 +89,7 @@
 					});
 			},
 			fetchData(page){
-				let url = "http://127.0.0.1:5000/tweet/all?hashtag="+this.hashtag+"&page="+page;
+				let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/all?hashtag="+this.hashtag+"&page="+page;
 				axios
 					.get(url)
 					.then(

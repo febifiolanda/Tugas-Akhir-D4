@@ -28,7 +28,7 @@ export default {
                     'Content-type': 'application/json'
                 }
             }
-            axios.post('http://127.0.0.1:5000/hashtag/insert', {
+            axios.post('https://be-sentiment-app-ta.herokuapp.com/hashtag/insert', {
                 hashtag: this.hashtagValue,
             },optionAxios)
             .then(function (response) {

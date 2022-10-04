@@ -110,7 +110,7 @@ export default {
 	},
 	methods: {
 		countTweet: function () {
-			let url = "http://127.0.0.1:5000/tweet/count?hashtag=" + this.hashtag;
+			let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/count?hashtag=" + this.hashtag;
 			axios
 				.get(url)
 				.then(
@@ -124,7 +124,7 @@ export default {
 				});
 		},
 		countSentiment: function () {
-			let url = "http://127.0.0.1:5000/tweet/sentiment?hashtag=" + this.hashtag;
+			let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/sentiment?hashtag=" + this.hashtag;
 			axios
 				.get(url)
 				.then(

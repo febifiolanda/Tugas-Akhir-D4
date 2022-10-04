@@ -69,7 +69,7 @@
 			fetchTweet: function (hashtag) {
 				this.error = null;
 				this.loading = true;
-				let url = "http://127.0.0.1:5000/tweet/crawl";
+				let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/crawl";
 				axios.post(url,{
 					hashtag : hashtag
 				},this.optionAxios).then(function(response){
@@ -94,7 +94,7 @@
 			deleteHashtag: function (id) {
 				this.error = null;
 				this.loading = true;
-				let url = "http://127.0.0.1:5000/hashtag/delete";
+				let url = "https://be-sentiment-app-ta.herokuapp.com/hashtag/delete";
 				axios.post(url,{
 					id : id
 				},this.optionAxios).then(function(response){
@@ -110,7 +110,7 @@
 			fetchData() {
 				this.error = null;
 				this.loading = true;
-				let url = "http://127.0.0.1:5000/hashtag/all";
+				let url = "https://be-sentiment-app-ta.herokuapp.com/hashtag/all";
 				axios
 					.get(url)
 					.then(

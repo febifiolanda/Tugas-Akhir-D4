@@ -47,7 +47,7 @@
 		},
 		methods: {
 			fetchData: function(){
-				let url = "http://127.0.0.1:5000/tweet/daytoday?hashtag=" + this.hashtag;
+				let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/daytoday?hashtag=" + this.hashtag;
 				axios
 					.get(url)
 					.then(

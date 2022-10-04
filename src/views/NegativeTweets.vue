@@ -83,7 +83,7 @@ export default {
     },
     methods: {
         countTweet() {
-            let url = "http://127.0.0.1:5000/tweet/count-negative?hashtag=" + this.hashtag;
+            let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/count-negative?hashtag=" + this.hashtag;
             axios
                 .get(url)
                 .then(
@@ -96,7 +96,7 @@ export default {
                 });
         },
         fetchData(page) {
-            let url = "http://127.0.0.1:5000/negative-tweet/all?hashtag=" + this.hashtag + "&page=" + page;
+            let url = "https://be-sentiment-app-ta.herokuapp.com/negative-tweet/all?hashtag=" + this.hashtag + "&page=" + page;
             axios
                 .get(url)
                 .then(

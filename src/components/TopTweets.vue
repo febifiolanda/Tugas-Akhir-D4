@@ -29,7 +29,7 @@
 		methods: {
 			fetchData: function(){
 				this.loading = true;
-				let url = "http://127.0.0.1:5000/tweet/toptweet?hashtag=" + this.hashtag;
+				let url = "https://be-sentiment-app-ta.herokuapp.com/tweet/toptweet?hashtag=" + this.hashtag;
 				axios
 					.get(url)
 					.then(
